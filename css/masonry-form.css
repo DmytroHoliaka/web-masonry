@@ -1,0 +1,108 @@
+.masonry-form {
+    grid-area: 1/1/25/5;
+    overflow-y: auto;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.masonry-container {
+    grid-area: 1/5/25/25;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 100%;
+    overflow: auto;
+
+    padding: 20px;
+}
+
+.masonry-container.horizontal {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 10px;
+}
+
+.masonry-container.vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.masonry-item {
+    border: 3px dashed rgb(62, 71, 105);
+    background-color: rgb(189, 201, 247);
+
+    padding: 10px;
+    margin-bottom: 10px;
+
+    border-radius: 8%;
+    text-align: center;
+}
+
+.items-details > div {
+    margin-top: 15px;
+    padding: 15px;
+    border: 3px dotted rgb(62, 71, 105);
+    background-color: rgb(189, 201, 247);
+    border-radius: 8px;
+}
+
+.items-details > div input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.masonry-form > button {
+    display: block;
+    margin: 10px auto;
+
+    border-radius: 8px;
+    font-weight: 600;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    border: 5px double rgb(62, 71, 105);
+    background-color: rgb(189, 201, 247);
+}
+
+.masonry-form > button:hover {
+    background-color: rgb(152, 168, 224);
+}
+
+.masonry-form > button:active {
+    background-color: rgb(127, 142, 201);
+}
+
+.masonry-form label {
+    display: block;
+    font-size: 20px;
+}
+
+.masonry-form > .items-amount {
+    background-color: white;
+    border: 3px dotted rgb(62, 71, 105);
+
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.masonry-form > .layout-direction {
+    background-color: white;
+    border: 3px dotted rgb(62, 71, 105);
+
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
