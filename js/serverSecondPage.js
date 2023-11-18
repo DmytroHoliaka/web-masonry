@@ -26,7 +26,7 @@ function createMasonryLayout(data) {
     data.items.forEach(function (item) {
         var div = document.createElement("div");
         div.className = "masonry-item";
-        div.textContent = item.content || "Default #" + item.id;
+        div.textContent = item.content || "Default #" + (item.id + 1);
         container.appendChild(div);
     });
 }
